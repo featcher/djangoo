@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .bar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-left: 850px;
+        }
+
+
+        .bar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .bar a.active {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .drop {
+            float: left;
+            overflow: hidden;
+        }
+
+        .drop.dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            margin: 0;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .drop:hover .content {
+            display: block;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            position: relative;
+            /* margin-left: auto; */
+        }
+
+        .search input[type="text"] {
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .search button {
+            padding: 8px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+            outline: none;
+        }
+
+        .search button:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+
+        .one, .two, .three, .four {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        iframe {
+            width: 50%;
+            height: 300px;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <ul>
+
+            <li class='drop'>
+                <a href="/"> Home </a>
+            </li>
+
+            <li class="search">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </li>
+
+            <li class='drop'>
+                <a href="disc.html"> Discover </a>
+            </li>
+            <li class='drop'>
+                <a href="create.html"> Create </a>
+            </li>
+            <li class='drop'>
+                <a href="/"> Profile </a>
+                <div class="content">
+                    <a href="update.html"> Edit Profile </a>
+                    <a href="logout.html"> Log Out </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="'container">
+        <div class="one">
+            <h1> New to Kpop? Songs to kickoff then! </h1>
+            <img src="/">
+            <p> Learning to experience K-pop means first ridding yourself of common misconceptions. The basics: K-pop is not a genre, nor do K-pop fans behave like a monolith. The term means "Korean pop," but like "Latin pop," the title is more of a geographic designation for the industry than a sonic one. An "idol system" for auditioning and creating pop talent, not unlike the mechanization of Berry Gordy's Motown in the 1960s and '70s, and financial support for the arts by the South Korean government is responsible for K-pop's dominion, but the music's current popularity in the United States is a relatively new phenomenon: born online, retweeted, streamed and shared ceaselessly.
+
+            K-pop music traverses genre with incredible ease — in one moment, taking cues from the dubstep drops that defined pop in the early 2010s, or Swedish hitmakers, or hip-hop, or R&B balladry, or new jack swing, or soul, or euro-pop, or Caribbean dancehall, or salsa and beyond — border-less eclecticism identifiable by the performers themselves, their seismic aesthetic judgments, and their multi-lingual singing. K-pop performers run the spectrum from girl groups and boy bands to soloists and rappers. The evolution of K-pop is defined by indistinct "generations" of the music, the parameters of which are frequently contested by fans and critics alike. Listening to K-pop is only one aspect of getting into industry, as well: The path to discovery is designed so that fans participate online, which means the most ardent supporters are vocal and engage in coordinated publicity efforts, such as streaming new music videos on an endless loop. That said, it is possible to get into K-pop by simply listening to it, and that's what the below playlist hopes to accomplish.
+            
+            Like any introduction, this should serve as a subjective primer — one curated to best satiate curious Western listeners and give them a skeletal foundation in which to build upon. In truth, the world of K-pop is expansive and exponentially evolving. It is not a matter of if you can find a K-pop artist whose work you'll fall for, it's when. Start digging below. </p>
+        </div>
+        
+        <div class="two">
+            <h2> FIRST GENERATION: The Origins of Idols </h2>
+            <h3> Seo Taiji and Boys, "Nan Arayo (I Know)" (1992) </h3>
+            <iframe></iframe>
+            <p> Most critics tend to agree that K-pop's origin story begins on April 11, 1992, when the trio Seo Taiji and Boys performed its soon-to-become a hit "Nan Arayo (I Know)" on South Korea's Munhwa Broadcasting Corporation. For many South Korean youths, the track was their first exposure to hip-hop and New Jack Swing (never mind the popularity of both genres in boy band history) and a welcome alternative to traditional styles of music, including "trot," a form of Korean folk. </p>
+            <h3> H.O.T., "Candy" (1996) </h3>
+            <iframe></iframe>
+            <p> H.O.T. (aka. High-Five of Teenagers — consider them formative to the trend of naming your group with an initialism for easy comprehension in the global marketplace) is largely credited as the first idol group in K-pop history, meaning that its members were brought together by a company — in this case, Lee Soo-man, founder of SM Entertainment. "Candy" is bubblegum pop at its brightest, cute music no doubt constructed in the model of American boy bands and J-pop. </p>
+            <h3> S.E.S., "I'm Your Girl" (1997) </h3>
+            <iframe></iframe>
+            <p> The girl group S.E.S., also put together by Lee Soo-man, was initially positioned as the female counterpart to H.O.T., though its sound differed drastically as the group's profile grew. On "I'm Your Girl," the group bears a striking resemblance to TLC — it's '90s R&B-pop, to a tee. </p>
+        </div>
+
+        <div class="three">
+            <h2> SECOND GENERATION: The Idol Industry Evolves </h2>
+            <h3> Rain, "Rainism" (2008) </h3>
+            <iframe></iframe>
+            <p> After training to debut in a boy band that never took off, Rain pursued a career as a soloist, eventually becoming the first K-pop star to break internationally. "Rainism" is his most successful single, with a sound not unsimilar to Usher and Justin Timberlake. It is especially noteworthy that many of the lyrics are in English. </p>
+            <h3> Wonder Girls, "Nobody" (2008) </h3>
+            <iframe></iframe>
+            <p> Girl group Wonder Girls' retro concept proved to be super successful in 2008, the beginning of a time period routinely referred to as "the golden age of K-pop." The quartet frequently sourced elements from vintage sounds, including Motown — the members embody the Supremes in the video for "Nobody," the first K-pop song to ever chart on the Billboard Hot 100. </p>
+            <h3> SHINee, "Ring Ding Dong" (2009) </h3>
+            <iframe></iframe>
+            <p> Boy band SHINee's "Ring Ding Dong" encapsulates the genre-hybridity of golden age K-pop: it's futuristic R&B, with percussion built on congas, Euro-pop production and heavily auto-tuned vocals. </p>
+            <h3> Girls Generation, "Gee" (2009) </h3>
+            <iframe></iframe>
+            <p> Consider Girls Generation's "Gee" the framework in which all future PG-rated K-pop girl groups would follow: It's sugar-y sweet, bouncy pop music all about love and crushing — and its earworm chorus made it almost instantaneously viral, the most valuable currency of all. </p>
+            <h3> SE7EN ft. Lil' Kim, "Girls" (2009) </h3>
+            <iframe></iframe>
+            <p> It's not just that K-pop, like all forms of popular music, is founded in Black music — as K-pop's presence grew in America, BET was one of its first supporters. Soloist SE7EN's collaboration with American rapper Lil' Kim, "Girls," premiered on 106 & Park. </p>
+            <h3> IU, "Good Day" (2010) </h3>
+            <iframe></iframe>
+            <p> Not all of the biggest K-pop artists become the biggest K-pop artists in the U.S., and such is the case for IU — she is one of the most successful K-pop musicians in South Korea and "Good Day" is proof. Her signature single is as striking as the lead musical number in a beloved Disney classic, and just as orchestral. </p>
+            <h3> Super Junior, "Mr. Simple" (2011) </h3>
+            <iframe></iframe>
+            <p> Super Junior's "Mr. Simple" is soul from Seoul — there's a scat-like, dark jazz club element to song's intro before it explodes in vivid, repetitive techno. </p>
+            <h3> 2NE1, "I Am The Best" (2011) </h3>
+            <iframe></iframe>
+            <p> 2NE1's "I Am The Best" is Euro-pop excellence — an empowerment anthem for the club. </p>
+            <h3> Psy, "Gangnam Style" (2012) </h3>
+            <iframe></iframe>
+            <p> The virality of Psy's "Gangnam Style," and it's easily mimicked horse-riding dance move, was the first K-pop song to make a major splash in the United States, but in the greater K-pop story, he's an outlier. The song is ironic and subversive, a criticism of a wealthy neighborhood in Seoul and a larger commentary on inequality. The others on this list are sincere love odes constructed to attract the widest audience. </p>
+            <h3> BoA, "Only One" (2012) </h3>
+            <iframe></iframe>
+            <p> BoA is formative in the K-pop story — she sang in English long before having a few key phrases in the chorus became a norm, and on "Only One," she tackled R&B breakup balladry with total expertise. </p>
+            <h3> BIGBANG, "Fantastic Baby" (2012) </h3>
+            <iframe></iframe>
+            <p> Before there was BTS, there was BIGBANG, the break-dancing boy band slated to take over the West. "Fantastic Baby" is the group's biggest hit, a gargantuan EDM-hip-hop beat so popular it was covered in the hit show Glee. </p>
+        </div>
+
+        <div class="four">
+            <h2> THIRD GENERATION: The Idol Industry Goes Transnational </h2>
+            <h3> 2PM, "My House" (2015) </h3>
+            <iframe></iframe>
+            <p> Boy band 2PM's "My House," is seductive, romantic R&B that will charm even the most staunch genre purist. </p>
+            <h3> GOT7, "Just Right" (2015) </h3>
+            <iframe></iframe>
+            <p> Some may find GOT7's child-like wonder on "Just Right" cheesy, but "twee-rap" might be a better categorization. The chorus, however, screams early One Direction. </p>
+            <h3> EXO, "Monster" (2016) </h3>
+            <iframe></iframe>
+            <p> The 12-member EXO offer a darker take on the electro-pop boy band formula on its single "Monster." </p>
+            <h3> Jennie, "Solo" (2018) </h3>
+            <iframe></iframe>
+            <p> In K-pop, it isn't uncommon for girl group and boy band members to pursue solo work outside of their collective duties — it allows them space to explore other creative avenues without breaking the band up, and doubles as a fan service for those listeners who prefer one member to the others (in K-pop, that member is your "bias"). Blackpink's Jennie, and her solo single "Solo," is the exemplar of a member "going solo," as she sings, without diverting too much from the integrity of the group. This one is for fans of big pop anthems and old school hip-hop whistle. </p>
+            <h3> April, "Oh My Mistake" (2018) </h3>
+            <iframe></iframe>
+            <p> Girl group April's "Oh My Mistake" is '80s synthpop with shimmering production — it is impossible to hear this and not feel giddy. </p>
+            <h3> Blackpink, "Kill This Love" (2019) </h3>
+            <iframe></iframe>
+            <p> The biggest girl group on the planet is Blackpink, a K-pop quartet without a full-length LP under its belt. With singles as ferocious as the air horn-adorned stadium anthem "Kill This Love," it's easy to see why: the single marries military cadences with trap, emphasized with gargantuan synthesizers. </p>
+            <h3> BTS ft. Halsey, "Boy With Luv" (2019) </h3>
+            <iframe></iframe>
+            <p> Any number of BTS songs would be appropriate to include here — check out "No More Dream," the group's first single, to get a sense of their range. That song rallied against a rigid education system that places untenable pressure on young people in South Korea, while "Boy With Luv" is an earworm single featuring one of the greatest American popstars of the 21st century. It's also one of BTS's most irresistible singles, a roller rink disco number punctuated with an almost house-like bass drum. </p>
+        </div>
+
+    </div>
+</body>
+</html>

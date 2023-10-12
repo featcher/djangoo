@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .bar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-left: 850px;
+        }
+
+
+        .bar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .bar a.active {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .drop {
+            float: left;
+            overflow: hidden;
+        }
+
+        .drop.dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            margin: 0;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .drop:hover .content {
+            display: block;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            position: relative;
+            /* margin-left: auto; */
+        }
+
+        .search input[type="text"] {
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .search button {
+            padding: 8px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+            outline: none;
+        }
+
+        .search button:hover {
+            background-color: #0056b3;
+        }
+
+        .find {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .find h2 {
+            text-align: center;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding:10px;
+        }
+
+        .blo1, .blo2, .blo3, .blo4{
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .blo1 .text,
+        .blo2 .text,
+        .blo3 .text,
+        .blo4 .text {
+            height: 100%;
+        }
+
+        .blo1 img,
+        .blo2 img,
+        .blo3 img,
+        .blo4 img {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .text {
+            padding: 20px 10px;
+        }
+
+        .text p {
+            margin: 0;
+        }
+
+        .text input[type="button"] {
+            padding: 8px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .text input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="bar">
+        <ul>
+
+            <li class='drop'>
+                <a href="/"> Home </a>
+            </li>
+
+            <li class="search">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </li>
+
+            <li class='drop'>
+                <a href="disc.html"> Discover </a>
+            </li>
+            <li class='drop'>
+                <a href="create.html"> Create </a>
+            </li>
+            <li class='drop'>
+                <a href="/"> Profile </a>
+                <div class="content">
+                    <a href="update.html"> Edit Profile </a>
+                    <a href="logout.html"> Log Out </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="find">
+        <h2> Gaming Blogs </h2>
+        <div class="blo1">
+            <img src= "https://i.pinimg.com/236x/82/bd/0e/82bd0e8b4b2dbe9912bbba0032a37cca.jpg">
+            <div class="text">
+                <p> Lana Del Ray songs and Men </p>
+                <a href="/"></a>
+                <input type="button" value="Continue">
+            </a>
+            </div>
+        </div>
+        <div class="blo2">
+            <img src= "https://i.pinimg.com/564x/50/67/45/5067459e547e22974723e3d034cc3132.jpg">
+            <div class="text">
+                <p> KPop made Crispy </p>
+                <a href="/"></a>
+                <input type="button" value="Continue">
+            </a>
+            </div>
+        </div>
+        <div class="blo3">
+            <img src= "https://i.pinimg.com/564x/e4/8b/4e/e48b4ee660e77e547fe3e63fb7104e3f.jpg">
+            <div class="text">
+                <p> SEVENTEEN-A Friendly Guide </p>
+                <a href="/"></a>
+                <input type="button" value="Continue">
+            </a>
+            </div>
+        </div>
+        <div class="blo4">
+                <img src= "https://i.pinimg.com/564x/b3/f4/35/b3f435ad71faedeea3bd4480498364be.jpg">
+                <div class="text">
+                    <p> What's wrong, Ari? </p>
+                    <a href="/"></a>
+                    <input type="button" value="Continue">
+                </a>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

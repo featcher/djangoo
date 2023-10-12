@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .bar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-left: 850px;
+        }
+
+
+        .bar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .bar a.active {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .drop {
+            float: left;
+            overflow: hidden;
+        }
+
+        .drop.dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            margin: 0;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .drop:hover .content {
+            display: block;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            position: relative;
+            /* margin-left: auto; */
+        }
+
+        .search input[type="text"] {
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .search button {
+            padding: 8px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+            outline: none;
+        }
+
+        .search button:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+
+        .one, .two, .three, .four {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        iframe {
+            width: 50%;
+            height: 300px;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <ul>
+
+            <li class='drop'>
+                <a href="/"> Home </a>
+            </li>
+
+            <li class="search">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </li>
+
+            <li class='drop'>
+                <a href="disc.html"> Discover </a>
+            </li>
+            <li class='drop'>
+                <a href="create.html"> Create </a>
+            </li>
+            <li class='drop'>
+                <a href="/"> Profile </a>
+                <div class="content">
+                    <a href="update.html"> Edit Profile </a>
+                    <a href="logout.html"> Log Out </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="one">
+            <h1> A Masterpiece from the Manga World </h1>
+            <img src="/">
+            <p> Tokyo Revengers is a very popular title creating a buzz in the anime community at the moment. The manga was first published in 2017 and has been very well received from the get-go.
+
+                The anime version of Tokyo Revengers seriously boosted the interest in the franchise since going to air in April 2021. It follows the story of a guy who finds himself in his body from 12 years ago, when he was a wannabe gangster.
+                
+                The Tokyo Revengers manga features and attracts readers with a very cool cast of characters, unpredictable and weird events and a love story, but still has all the great elements of famous shonen manga that we love such as Naruto and One Piece.
+                
+                This, along with the beautifully detailed animation of the anime version, Tokyo Revengers has become an anime series definitely worth putting into your watchlist. </p>
+        </div>
+        <div class="two">
+            <h2> The Storyline of Tokyo Revengers </h2>
+            <p> The main character of the story is Takemichi Hanagaki, a 26-year-old man with a life devoid of any excitement. With no joy, hope, or direction in life, Takemichi lives in a dingy apartment, always despised by his younger boss, and has no interest in love.
+
+                On a boring day like any other, Takemichi finds out that Hinata Tachibana, his high school sweetheart, was killed by the Tokyo Manji gang - a notorious criminal gang sweeping the city.
+                
+                This discovery caused a disruption in Takemichi's psyche, in part because Hinata was the only girlfriend he ever had and was the only girl he ever loved. Whilst waiting on a train platform, Takemichi himself gets pushed in front of a moving train and somehow finds himself 12 years in the past in his body from 12 years ago!
+                
+                Suddenly placed in an unusual situation, Takemichi vows to change the future: save Hinata Tachibana's life by infiltrating the Tokyo Manji gang. </p>
+        </div>
+        <div class="three">
+            <h2> Main Characters </h2>
+
+            <h3> Takemichi Hanagaki </h3>
+            <img src="/">
+            <p> Takemichi Hanagaki, sometimes called Takemitchy, is the protagonist of the Tokyo Revengers. He goes back in time and joins the Toman gang to try and alter the timeline that will lead to the death of his high school girlfriend in the future.
+                Unlike many male protagonists in famous Shonen series, Takemichi has no particular hidden strength. The truth is that compared to the other members of Toman, he is actually very weak - physically. 
+                He is a stubborn person who never runs away from battle, is loyal to his friends and will protect them to the end. Because of this, he received recognition and admiration from the other members of Toman. 
+                Although he does not have great power, he does possess the ability to time jump, but can only jump back and forth exactly 12 years. To do this, he needs one crucial factor: Naoto Tachibana - Takemichi's girlfriend Hinata's younger brother. In Tokyo Revengers, he tries to use this power to find a way to change the future and save Hinata. </p>
+            
+            <h3> Manjiro Sano </h3>
+            <img src="/">
+            <p> Manjito Sano, commonly known as Mikey, is the head and founding member of the Tokyo Manji Gang.
+                Mikey is a very charismatic person and the glue that keeps the Toman gang together. Add to that his tremendous strength, which members of Toman both gravitates to and fears. This strength earned him the name Muteki Mikey (Invincible Mikey or Unrivalled Mikey) by other gangs.
+                Mikey has a strong sense of loyalty and determination to protect the reputation and dignity of those he considers close friends. He rarely appears weak. His mentality as a leader leads him to believe that as the sole pillar of Toman, if he is weak, Toman will also be weak. </p>
+            
+            <h3> Ken Ryuguji </h3>
+            <img src="/">
+            <p> Draken is the second-in-command and is also a founding member of the Toman Gang.
+                Physically quite tall, Draken is also a character with impressive strength. He has a signature dragon tattoo on one side of his head.
+                Despite having the same crazy aggressiveness and similarly tremendous strength as Mikey, Draken is actually a very mature, practical thinker and is extremely caring for his friends. </p>
+            
+            <h3> Chifuyu Matsuno </h3>
+            <img src="/">
+            <p> Chifuyu is the Deputy Head of Division 1 of the Toman Gang.
+                Chifuyu is a practical thinker and has a calm personality. Like the rest of Toman, he has a great loyalty to his friends and never fights with them. Chifuyu is also not afraid to show emotion in times of need and blindly help people.
+                Chifuyu is usually the one who thinks and plans before acting and the one who gives advice to Takemichi. </p>
+            
+            <h3> Takashi Mitsuyu </h3>
+            <img src="/">
+            <p> Takashi is the head of Division 2 of the Tokyo Manji Gang and played an important role in founding the crew.
+                Despite a difficult upgringing, he is calm, optimistic and brings positive energy to the members of Toman. Mitsuya tends to settle things peacefully but that doesn't stop him when a fight has to be fought.
+                He always takes care of his two little sisters and is particularly talented at sewing. </p>
+            
+            <h3> Kazutora Hanemiya (2010) </h3>
+            <img src="/">
+            <p> Kazutora was a founding member of the Tokyo Manji Gang, but as the story progressed he left the crew and became an antagonist.
+                He had a tumultuous childhood and after experiencing many incidents with the Toman Gang, Kazutora's mentality became even more paranoid and unstable. </p>
+            
+            <h3> Keisuke Baji </h3>
+            <img src="/">
+            <p> Keisuke Baji is also a founding member of Toman Gang.
+                Baji's personality is a bit crazy. He likes the thrill of battle and always fights with a big smile on his face.
+                He has a strong loyalty to the Toman crew and will do anything to protect his comrades.
+                Baji is also the only member other than Takemichi to recognize the true enemy of the Tokyo Manji crew and demonstrate his sharp intellect. </p>
+            
+            <h3> Keisuke Baji </h3>
+            <img src="/">
+            <p> Keisuke Baji is also a founding member of Toman Gang.
+                Baji's personality is a bit crazy. He likes the thrill of battle and always fights with a big smile on his face.
+                He has a strong loyalty to the Toman crew and will do anything to protect his comrades.
+                Baji is also the only member other than Takemichi to recognize the true enemy of the Tokyo Manji crew and demonstrate his sharp intellect. </p>
+        </div>
+    </div>
+</body>
+</html>
