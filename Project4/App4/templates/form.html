@@ -1,0 +1,25 @@
+<html>
+    <head> 
+        <title> File </title>
+    </head>
+    <body>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <label for="name"> Name </label><br>
+            <input type="text" id="name" name="Name"><br>
+
+            <label for="email"> Email </label><br>
+            <input type="email" id="email" name="Email"><br>
+
+            <label for="phone"> Phone </label><br>
+            <input type="text" id="phone" name="Phone"><br>
+
+            <label for="image"> Image </label><br>
+            <input type="file" id="image" name="Image"><br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>

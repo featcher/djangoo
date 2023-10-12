@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="5px" align="center">
+        <tr>
+            <th> Name </th>
+            <th> Email </th>
+            <th> Phone </th>
+            <th> Image </th>
+        </tr>
+        <tr>
+            {%for item in key%}
+            <td>{{item.Name}}</td>
+            <td>{{item.Email}}</td>
+            <td>{{item.Phone}}</td>
+            <td><img src="{{item.Image.url}}" style='max-height: 100px;'></td>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>
